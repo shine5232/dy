@@ -11,17 +11,17 @@
     <div class="layui-row layui-col-space15">
         <div class="layui-col-md12">
             <div class="layui-card">
-              <form class="layui-form">
+              <div class="layui-form">
                 <div class="layui-card-header">
-                  <button class="layui-btn layui-btn-danger" onclick="delAll()">
+                  <div class="layui-btn layui-btn-danger" onclick="delAll()">
                     <i class="layui-icon layui-icon-delete"></i>批量删除
-                  </button>
-                  <button class="layui-btn" onclick="xadmin.open('增加菜单','/index/menu/add',550,700)">
+                  </div>
+                  <div class="layui-btn" onclick="xadmin.open('增加菜单','/index/menu/add',550,500)">
                   	<i class="layui-icon layui-icon-add-circle-fine"></i>增加菜单
-                  </button>
-                  <button class="layui-btn layui-btn-normal" lay-filter="order" lay-submit="">
+                  </div>
+                  <div class="layui-btn layui-btn-normal" lay-filter="order" lay-submit="">
                     <i class="layui-icon layui-icon-refresh"></i>重新排序
-                  </button>
+                  </div>
                 </div>
                 <div class="layui-card-body">
                     <table class="layui-table layui-form">
@@ -42,7 +42,7 @@
                       </tbody>
                     </table>
                 </div>
-              </form>
+              </div>
                 <!-- <div class="layui-card-body">
                     <div class="page" id="page"></div>
                 </div> -->

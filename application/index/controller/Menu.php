@@ -18,15 +18,15 @@ class Menu extends Base
         foreach ($result as $key => $value) {
         	$result[$key]['has_children'] = '&nbsp;&nbsp;&nbsp;&nbsp;';
             $result[$key]['status']  = 	$value['status'] ? '<input type="checkbox" name="switch" lay-text="开启|停用" checked="" lay-skin="switch" data-id='.$value['id'].' lay-filter="switch">' : '<input type="checkbox" name="switch" lay-text="开启|停用" lay-skin="switch" data-id='.$value['id'].' lay-filter="switch">';
-            $result[$key]['str_manage']  =	'<button class="layui-btn layui-btn layui-btn-xs" onclick='."xadmin.open('编辑','/index/menu/edit?id=".$value['id']."',550,700)".' >'.
+            $result[$key]['str_manage']  =	'<div class="layui-btn layui-btn layui-btn-xs" onclick='."xadmin.open('编辑','/index/menu/edit?id=".$value['id']."',550,500)".' >'.
             									'<i class="layui-icon">&#xe642;</i>编辑'.
-            								'</button>'.
-                            				'<button class="layui-btn layui-btn-warm layui-btn-xs" onclick='."xadmin.open('添加子菜单','/index/menu/add?parent_id=".$value['id']."',550,700)".' >'.
+            								'</div>'.
+                            				'<div class="layui-btn layui-btn-warm layui-btn-xs" onclick='."xadmin.open('添加子菜单','/index/menu/add?parent_id=".$value['id']."',550,500)".' >'.
                             					'<i class="layui-icon">&#xe642;</i>添加子菜单'.
-                            				'</button>'.
-                            				'<button class="layui-btn-danger layui-btn layui-btn-xs"  onclick='."member_del(this,".$value['id'].")".' >'.
+                            				'</div>'.
+                            				'<div class="layui-btn-danger layui-btn layui-btn-xs"  onclick='."member_del(this,".$value['id'].")".' >'.
                             					'<i class="layui-icon">&#xe640;</i>删除'.
-                            				'</button>';
+                            				'</div>';
             $count = Db::name('AdminMenu')->where("parent_id", $value['id'])->count();
             if($count > 0){
             	$result[$key]['has_children'] = '<i class="layui-icon x-show" status="true">&#xe623;</i>';
