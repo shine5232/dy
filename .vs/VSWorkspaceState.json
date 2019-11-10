@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\application",
+    "\\application\\index",
+    "\\application\\index\\controller",
+    "\\application\\index\\view",
+    "\\application\\index\\view\\base"
+  ],
+  "SelectedNode": "\\application\\index\\view\\base\\device.html",
+  "PreviewInSolutionExplorer": false
+}

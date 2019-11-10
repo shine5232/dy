@@ -1,0 +1,126 @@
+<{include file="common/header"}>
+<div class="layui-fluid">
+    <div class="layui-row">
+        <form class="layui-form">
+            <div class="layui-form-item">
+                <label for="parent_id" class="layui-form-label">
+                    <span class="x-red">*</span>上级菜单
+                </label>
+                <div class="layui-input-inline">
+                    <select name="parent_id">
+                        <option value="0">作为一级菜单</option>
+                        <{$select_category}>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>菜单名称
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="name" name="name" required="" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入菜单名称" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="app" class="layui-form-label">
+                    <span class="x-red">*</span>应用名称
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="app" name="app" required="" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入应用名称,如:app" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="controller" class="layui-form-label">
+                    <span class="x-red">*</span>控制器名
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="controller" name="controller" required="" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入控制器名,如:index" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="action" class="layui-form-label">
+                    <span class="x-red">*</span>方法名称
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="action" name="action" required="" lay-verify="required" autocomplete="off" class="layui-input" placeholder="请输入方法名称,如:list" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="icon" class="layui-form-label">显示图标</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="icon" name="icon" autocomplete="off" class="layui-input" placeholder="请输入图标名称,如:user" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="param" class="layui-form-label">参数信息</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="param" name="param" autocomplete="off" class="layui-input" placeholder="请输入传递的参数,如:id=3&p=3" />
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="status" class="layui-form-label">菜单状态</label>
+                <div class="layui-input-inline">
+                    <select name="status">
+                        <option value="1">显示</option>
+                        <option value="0">隐藏</option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div class="layui-form-item">
+                <label for="type" class="layui-form-label">菜单类型</label>
+                <div class="layui-input-inline">
+                    <select name="type">
+                        <option value="0">只作为菜单</option>
+                        <option value="1">权限认证+菜单</option>
+                    </select>
+                </div>
+            </div> -->
+            <div class="layui-form-item layui-form-text">
+                <label for="remark" class="layui-form-label">备注</label>
+                <div class="layui-input-block">
+                    <textarea placeholder="请输入内容" id="remark" name="remark" class="layui-textarea textarea"></textarea>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_repass" class="layui-form-label"></label>
+                <button class="layui-btn" lay-filter="add" lay-submit="">增加</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+    layui.use(['form', 'layer'],function() {
+        $ = layui.jquery;
+        var form = layui.form,
+            layer = layui.layer;
+        //监听提交
+        form.on('submit(add)',function(data) {
+            $.post('/index/menu/addPost',data.field,function(j){
+                layer.closeAll();
+                if(j.status == 'success'){
+                    layer.msg('添加成功',{
+                        icon:1,
+                        time:1000
+                    },function(){
+                        close();
+                    });
+                }else{
+                    layer.msg('添加失败',{
+                        icon:2,
+                        time:1000
+                    },function(){
+                        close();
+                    });
+                }
+            },'json');
+            return false;
+        });
+        function close(){
+            // 获得frame索引
+            var index = parent.layer.getFrameIndex(window.name);
+            //关闭当前frame
+            parent.layer.close(index);
+        }
+    });
+</script>
+<{include file="common/footer"}>
