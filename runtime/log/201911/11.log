@@ -1,0 +1,300 @@
+---------------------------------------------------------------
+[ 2019-11-11T09:41:48+08:00 ] 127.0.0.1 GET www.dy.com/
+[运行时间：0.056003s] [吞吐率：17.86req/s] [内存消耗：1,284.00kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ D:\phpStudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\dy\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:48+08:00 ] 127.0.0.1 GET www.dy.com/static/css/font.css
+[运行时间：0.015000s] [吞吐率：66.67req/s] [内存消耗：975.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'font.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 07 Nov 2019 08:18:39 GMT',
+  'if-none-match' => '"1f9-596bd50070c1c"',
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/font_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:49+08:00 ] 127.0.0.1 GET www.dy.com/static/css/login.css?12
+[运行时间：0.016001s] [吞吐率：62.50req/s] [内存消耗：975.18kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'login.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Sat, 09 Nov 2019 08:30:16 GMT',
+  'if-none-match' => '"a53-596e5b54c53c2"',
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/login_css' => '',
+  0 => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:49+08:00 ] 127.0.0.1 GET www.dy.com/static/css/xadmin.css
+[运行时间：0.018001s] [吞吐率：55.55req/s] [内存消耗：975.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'xadmin.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Sat, 09 Nov 2019 05:58:42 GMT',
+  'if-none-match' => '"26ea-596e39741430b"',
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/xadmin_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:49+08:00 ] 127.0.0.1 GET www.dy.com/static/images/logo.png
+[运行时间：0.017001s] [吞吐率：58.82req/s] [内存消耗：975.18kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'logo.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'if-modified-since' => 'Thu, 07 Nov 2019 06:27:07 GMT',
+  'if-none-match' => '"6d0-596bbc12f0459"',
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/images/logo_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:53+08:00 ] 127.0.0.1 GET www.dy.com/
+[运行时间：0.014001s] [吞吐率：71.42req/s] [内存消耗：1,169.78kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'User',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ D:\phpStudy\WWW\dy\application\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\dy\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:53+08:00 ] 127.0.0.1 GET www.dy.com/static/css/xadmin.css
+[运行时间：0.016001s] [吞吐率：62.50req/s] [内存消耗：974.45kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'xadmin.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/xadmin_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:53+08:00 ] 127.0.0.1 GET www.dy.com/static/css/login.css?12
+[运行时间：0.016001s] [吞吐率：62.50req/s] [内存消耗：974.59kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'login.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/login_css' => '',
+  0 => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:53+08:00 ] 127.0.0.1 GET www.dy.com/static/css/font.css
+[运行时间：0.017001s] [吞吐率：58.82req/s] [内存消耗：974.45kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'css',
+    2 => 'font.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/css/font_css' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-11T09:41:54+08:00 ] 127.0.0.1 GET www.dy.com/static/images/logo.png
+[运行时间：0.014001s] [吞吐率：71.42req/s] [内存消耗：974.59kb] [文件加载：33]
+[ info ] [ LANG ] D:\phpStudy\WWW\dy\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'images',
+    2 => 'logo.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=l687ggpc1s2b272v1s2ddkmgo2; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.dy.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.dy.com',
+)
+[ info ] [ PARAM ] array (
+  '/static/images/logo_png' => '',
+)
+[ info ] [ LOG ] INIT File

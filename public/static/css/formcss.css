@@ -1,0 +1,21 @@
+.zhushi{
+	margin-top: 5px;
+    color: red;
+    font-size: 11px;
+}
+.textarea{
+	max-width: 300px !important;
+}
+.layui-form-item .layui-input-inline{
+	width: 300px !important;
+}
+.order-input{
+	display: flex;
+	align-items: center;
+}
+.layui-table th{
+	text-align: center;
+}
+.th-checkbox{
+	text-align: left !important;
+}

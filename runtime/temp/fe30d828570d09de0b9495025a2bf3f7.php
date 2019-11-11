@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\phpStudy\WWW\dy\public/../application/index\view\user\login.html";i:1573114667;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\phpStudy\WWW\dy\public/../application/index\view\user\login.html";i:1573436054;}*/ ?>
 <!doctype html>
 <html  class="x-admin-sm">
 <head>
